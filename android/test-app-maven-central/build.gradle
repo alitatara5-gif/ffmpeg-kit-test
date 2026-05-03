@@ -28,8 +28,14 @@ android {
     }
 }
 
+repositories {
+    google()
+    mavenCentral()
+}
+
 dependencies {
-    implementation 'com.arthenica:ffmpeg-kit-full:4.5.LTS'
+    // Versi 4.4 adalah versi paling 'aman' dan pasti ada di server
+    implementation 'com.arthenica:ffmpeg-kit-full:4.4'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 }
